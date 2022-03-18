@@ -1,0 +1,97 @@
+.menu *{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url("../imges1.png");
+}
+.menu ul,
+.menu ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0) ;
+}
+ul{
+    padding: 20px;
+    margin: 1px;
+}
+header{
+    margin-top: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu > ul{
+    display: flex;
+    justify-content: center;
+}
+.photo{
+    width: 100%;
+    height: 100%;
+}
+.menu > ul li a{
+    display: block;
+    background: #ececed;
+    padding: 15px 30px 15px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+.menu > ul li > a i.fa{
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    font-size: 30px;
+}
+img{
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin: 5px;
+    left: 12px;
+}
+a{
+    font-size: 17px;
+}
+.menu > ul li:first-child{
+    border-left: 3px solid #b2b3b5;
+}
+.menu > ul li:last-child{
+    border-right: 3px solid #babbbb;
+}
+.menu > ul li{
+    position: relative;
+    border-right: 3px solid #c7c8ca;
+}
+.menu li a:hover{
+    background: #454547;
+    color: #ffffff;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.3s ease;
+}
+li{
+    border-style: none;
+    border-width: 3px;
+    border-color: #b2b3b5;
+}
+.menu li ul{
+    position: absolute;
+    min-width: 150px;
+    display: none;
+}
+.menu li > ul li{
+    border: 2px solid #c7c8ca;
+}
+.menu li > ul li a{
+    padding: 10px;
+    text-transform: none;
+    background: #e4e4e5;
+}
+.menu li > ul li ul{
+    position: absolute;
+    right: -150px;
+    top: 0px;
+}
+.menu li:hover > ul{
+    display: block;
+}
